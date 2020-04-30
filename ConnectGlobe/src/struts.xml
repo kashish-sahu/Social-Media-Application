@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	<package name="default" extends="struts-default">
+	
+	<action name="login" class="register.CheckUser" method="execute">
+			<result name="1">post.jsp</result>
+			<result name="2">index.jsp</result>
+		</action>
+	
+	<action name="register" class="register.AddUser" method="execute">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="1">post.jsp</result>
+			<result name="2">index.jsp</result>
+		</action>
+		
+		<action name="logout" class="CurrentUser.LogOut">
+			<result name="1">index.jsp</result>
+		</action>
+		
+		<action name="comment" class="post.PostId">
+		<result name="1">comment.jsp</result>
+		</action>
+	
+		<action name="createpost" class="post.Upload"
+			method="execute">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="1">post.jsp</result>
+			<result name="2">post.jsp</result>
+		</action>
+		
+		<action name="addcomment" class="post.AddComment">
+		<result name="1">comment.jsp</result>
+		</action>
+	
+	</package>
+</struts>      

@@ -1,0 +1,71 @@
+.heading{
+  font-size:60px;
+  font-family:'Roboto Mono', monospace;
+  text-align:center;
+  margin:3px;
+}
+
+.Header-name{
+text-align:center;	
+}
+
+h3{
+  text-align:center;
+  font-size:25px;
+  font-family:'Roboto Mono', monospace;
+  padding:30px;
+}
+.form-email{
+	margin-left:100px;
+}
+.control-label{
+  font-size:20px;
+  padding:310px;
+  font-family:'Roboto Mono', monospace;
+}
+.form-control{
+  display:inline-block;
+  margin-left:100px;
+  border:5px solid black;
+  padding-left:12px;
+  padding-bottom:20px;
+  padding-top:20px;
+  padding-right:12px;
+  font-weight:bold;
+  font-size:18px;
+  height:25px;
+  width:82%;
+}
+.btn{
+	align:center;
+  border:3px solid black;
+  margin-top:20px;
+  margin-left:300px;
+ font-family:'Roboto Mono', monospace;
+  font-size:20px;
+  opacity:0.9;
+}
+.btn:hover
+{
+  background-color:#020123;
+  color:white;
+  opacity:1;
+}
+p{
+  font-size:18px;
+  font-weight:bold;
+  margin-left:100px;
+  margin-top:25px;
+  padding:20px;
+  padding-right:55px;
+  font-family:'Roboto Mono', monospace;
+}
+.link{
+  text-decoration:underline;
+  color:black;
+  opacity:0.9;
+}
+.link:hover{
+  color:#020123;
+}
+
